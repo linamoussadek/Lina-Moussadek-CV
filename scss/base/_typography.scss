@@ -1,0 +1,60 @@
+/* Typography System */
+.section-title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: var(--mb-3);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  text-align: center;
+  margin-bottom: var(--mb-3);
+  color: var(--text-color-light);
+}
+
+/* Text Utilities */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+.text-capitalize { text-transform: capitalize; }
+
+/* Font Weights */
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: var(--font-medium); }
+.font-semibold { font-weight: var(--font-semi-bold); }
+
+/* Font Sizes */
+.text-xs { font-size: var(--smaller-font-size); }
+.text-sm { font-size: var(--small-font-size); }
+.text-base { font-size: var(--normal-font-size); }
+.text-lg { font-size: var(--h3-font-size); }
+.text-xl { font-size: var(--h2-font-size); }
+.text-2xl { font-size: var(--h1-font-size); }
+.text-3xl { font-size: var(--big-font-size); }
+
+/* Line Heights */
+.leading-none { line-height: 1; }
+.leading-tight { line-height: 1.25; }
+.leading-normal { line-height: 1.5; }
+.leading-loose { line-height: 2; }
+
+/* Text Colors */
+.text-primary { color: var(--first-color); }
+.text-secondary { color: var(--text-color); }
+.text-light { color: var(--text-color-light); }
+.text-title { color: var(--title-color); }
+
+/* Responsive Typography */
+@media screen and (min-width: 968px) {
+  .section-title {
+    font-size: var(--h1-font-size);
+  }
+  
+  .section-subtitle {
+    font-size: var(--normal-font-size);
+  }
+}

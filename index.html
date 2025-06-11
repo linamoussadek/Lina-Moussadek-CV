@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <!-- Add your CSS and other head elements here -->
+</head>
+<body>
+    <!-- Your header and other sections -->
+
+    <!-- ABOUT -->
+<section class="about section" id="about" aria-labelledby="about-title">
+    <h2 class="section-title" id="about-title">About Me</h2>
+    <span class="section-subtitle">My introduction</span>
+
+    <div class="about-container container grid">
+        <div class="about-image-wrapper">
+            <div class="about-image-bg"></div>
+            <img src="img/About picture.png" alt="Lina Moussadek's profile picture" class="about-img" loading="lazy">
+            <div class="about-decoration"></div>
+        </div>
+
+        <div class="about-data">
+            <p class="about-description">
+                I was born in Casablanca, Morocco, where I attended a French school.
+                Fond of interior design, I always wanted to become an architect. It's only in high school that I started
+                leaning towards a more challenging, and fast-paced career. Computer Science formed the best combination
+                between my artistic aspirations and my new career perspective. As of now, I aim at specializing in front-end
+                development.
+            </p>
+
+            <div class="about-info">
+                <div class="about-box">
+                    <i class="fas fa-award about-icon"></i>
+                    <h3 class="about-title">Experience</h3>
+                    <span class="about-subtitle">2+ Years</span>
+                </div>
+
+                <div class="about-box">
+                    <i class="fas fa-globe-americas about-icon"></i>
+                    <h3 class="about-title">Languages</h3>
+                    <span class="about-subtitle">3+ Spoken</span>
+                </div>
+
+                <div class="about-box">
+                    <i class="fas fa-laptop-code about-icon"></i>
+                    <h3 class="about-title">Projects</h3>
+                    <span class="about-subtitle">5+ Completed</span>
+                </div>
+            </div>
+
+            <div class="about-buttons">
+                <a download="" href="pdf/Lina-Moussadek-CV.pdf" class="button button-flex" aria-label="Download my CV">
+                    Download CV <i class="fas fa-download button-icon" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-title">
+        <h2 class="section-title" id="portfolio-title">Portfolio</h2>
+        <span class="section-subtitle">Most recent work</span>
+
+        <div class="portfolio-container container">
+            <div class="portfolio-filters">
+                <button class="portfolio-filter active" data-filter="all">All</button>
+                <button class="portfolio-filter" data-filter="web">Web</button>
+                <button class="portfolio-filter" data-filter="design">Design</button>
+                <button class="portfolio-filter" data-filter="app">App</button>
+            </div>
+
+            <div class="portfolio-gallery">
+                <!-- Project 1 -->
+                <article class="portfolio-card portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="img/img_1.png" alt="Web Development Project" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">E-Commerce Website</h3>
+                            <p class="portfolio-description">Modern responsive e-commerce platform built with React and Node.js</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/linamoussadek" target="_blank" rel="noopener" class="portfolio-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="portfolio-card portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="img/img_2.png" alt="Portfolio Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Portfolio Website</h3>
+                            <p class="portfolio-description">Personal portfolio showcasing web development skills and projects</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/linamoussadek" target="_blank" rel="noopener" class="portfolio-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="portfolio-card portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="img/img_3.png" alt="CV Project" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Interactive CV</h3>
+                            <p class="portfolio-description">An interactive CV with theme toggling and PDF export functionality</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/linamoussadek" target="_blank" rel="noopener" class="portfolio-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linamoussadek.github.io/Coding-my-CV/" target="_blank" rel="noopener" class="portfolio-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="portfolio-card portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <img src="img/img_4.png" alt="UI/UX Design Project" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Mobile App Design</h3>
+                            <p class="portfolio-description">Modern mobile app UI/UX design with clean interface and smooth user experience</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link" aria-label="View design">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="portfolio-link" aria-label="View prototype">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="portfolio-card portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio1.jpg" alt="Restaurant Website" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Restaurant Website</h3>
+                            <p class="portfolio-description">Elegant restaurant website with online reservation system and menu showcase</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/linamoussadek" target="_blank" rel="noopener" class="portfolio-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="portfolio-card portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio2.jpg" alt="Task Management App" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Task Manager</h3>
+                            <p class="portfolio-description">Productivity app for task management with team collaboration features</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/linamoussadek" target="_blank" rel="noopener" class="portfolio-link" aria-label="View source code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-link" aria-label="View live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+<section class="skills section" id="skills" aria-labelledby="skills-title">
+    <h2 class="section-title" id="skills-title">Skills & Technologies</h2>
+    <span class="section-subtitle">My technical expertise</span>
+
+    <div class="skills-container container">
+        <!-- Skills Categories -->
+        <div class="skills-categories">
+            <button class="skills-category active" data-category="all">All</button>
+            <button class="skills-category" data-category="frontend">Frontend</button>
+            <button class="skills-category" data-category="backend">Backend</button>
+            <button class="skills-category" data-category="tools">Tools</button>
+            <button class="skills-category" data-category="design">Design</button>
+        </div>
+
+        <!-- Skills Network -->
+        <div class="skills-network">
+            <canvas id="skillsCanvas" class="skills-canvas"></canvas>
+            
+            <!-- Skill Nodes -->
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-node" data-category="frontend" data-skill="react">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <span class="skill-name">React</span>
+                    <div class="skill-level expert"></div>
+                </div>
+
+                <div class="skill-node" data-category="frontend" data-skill="javascript">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-level expert"></div>
+                </div>
+
+                <div class="skill-node" data-category="frontend" data-skill="html">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <span class="skill-name">HTML5</span>
+                    <div class="skill-level expert"></div>
+                </div>
+
+                <div class="skill-node" data-category="frontend" data-skill="css">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <span class="skill-name">CSS3</span>
+                    <div class="skill-level expert"></div>
+                </div>
+
+                <div class="skill-node" data-category="frontend" data-skill="typescript">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <span class="skill-name">TypeScript</span>
+                    <div class="skill-level intermediate"></div>
+                </div>
+
+                <div class="skill-node" data-category="frontend" data-skill="vue">
+                    <div class="skill-icon">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <span class="skill-name">Vue.js</span>
+                    <div class="skill-level intermediate"></div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-node" data-category="backend" data-skill="nodejs">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <span class="skill-name">Node.js</span>
+                    <div class="skill-level intermediate"></div>
+                </div>
+
+                <div class="skill-node" data-category="backend" data-skill="python">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <span class="skill-name">Python</span>
+                    <div class="skill-level intermediate"></div>
+                </div>
+
+                <div class="skill-node" data-category="backend" data-skill="java">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <span class="skill-name">Java</span>
+                    <div class="skill-level intermediate"></div>
+                </div>
+
+                <div class="skill-node" data-category="backend" data-skill="mongodb">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="skill-name">MongoDB</span>
+                    <div class="skill-level beginner"></div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-node" data-category="tools" data-skill="git">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <span class="skill-name">Git</span>
+                    <div class="skill-level expert"></div>
+                </div>
+
+                <div class="skill-node" data-category="tools" data-skill="docker">
+                    <div class="skill-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <span class="skill-name">Docker</span>
+                    <div class="skill-level beginner"></div>
+                </div>
+
+                <div class="skill-node" data-category="tools" data-skill="aws">
+                    <div class="skill-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <span class="skill-name">AWS</span>
+                    <div class="skill-level beginner"></div>
+                </div>
+
+                <div class="skill-node" data-category="tools" data-skill="webpack">
+                    <div class="skill-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <span class="skill-name">Webpack</span>
+                    <div class="skill-level intermediate"></div>
+                </div>
+
+                <!-- Design Skills -->
+                <div class="skill-node" data-category="design" data-skill="figma">
+                    <div class="skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <span class="skill-name">Figma</span>
+                    <div class="skill-level expert"></div>
+                </div>
+
+                <div class="skill-node" data-category="design" data-skill="photoshop">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <span class="skill-name">Photoshop</span>
+                    <div class="skill-level intermediate"></div>
+                </div>
+
+                <div class="skill-node" data-category="design" data-skill="ux">
+                    <div class="skill-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <span class="skill-name">UX Design</span>
+                    <div class="skill-level intermediate"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Legend -->
+        <div class="skills-legend">
+            <div class="legend-item">
+                <div class="legend-dot expert"></div>
+                <span>Expert</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot intermediate"></div>
+                <span>Intermediate</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot beginner"></div>
+                <span>Learning</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Your footer and other sections -->
+</body>
+</html>

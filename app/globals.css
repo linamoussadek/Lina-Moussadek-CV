@@ -1,0 +1,491 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hue-color: 328;
+  --first-color: #ba2089;
+  --first-color-second: #ba2089;
+  --first-color-alt: #a01c77;
+  --first-color-lighter: #bf7daa;
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+  /* New color scheme based on screenshot */
+  --mauve: #c586a7;
+  --mauve-light: #f3e6ee;
+  --mauve-dark: #a86e8e;
+  --mauve-darker: #8c5a76;
+  --pink-light: #fdf4f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--body-color);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--first-color);
+}
+
+/* Dark mode styles - Pure dark, no blue tint */
+.dark {
+  --title-color: #fff;
+  --text-color: #e5e7eb;
+  --input-color: #23202b;
+  --body-color: #181420;
+  --container-color: #23202b;
+  --scroll-bar-color: #2d2233;
+  --scroll-thumb-color: #a84e8a;
+  /* Vibrant, modern pink/mauve palette for dark mode */
+  --mauve: #e87cb9;         /* vibrant pink-mauve for accents */
+  --mauve-light: #a84e8a;   /* rich, saturated pink for backgrounds */
+  --mauve-dark: #f7b2e6;    /* light, soft pink for highlights */
+  --mauve-darker: #fce4f3;  /* very light pink for subtle backgrounds */
+  --pink-light: #2a1533;    /* deep, modern pinkish-purple for main backgrounds */
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Utility classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slideInUp 0.8s ease-out;
+}
+
+.animate-slide-left {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slide-right {
+  animation: slideInRight 0.8s ease-out;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #ba2089, #bf7daa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom button styles */
+.btn-primary {
+  background: #ba2089;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(186, 32, 137, 0.3);
+  background: #a01c77;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ba2089;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid #ba2089;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #ba2089;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Card styles */
+.card {
+  background: var(--container-color);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.dark .card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Section spacing */
+.section {
+  padding: 80px 0;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+
+  .text-7xl {
+    font-size: 3rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}
+
+/* Loading animation */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #ba2089;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Terminal styles - modern glassmorphism, techy, visible text */
+.terminal-bg {
+  background: rgba(253, 244, 249, 0.85); /* semi-transparent pink-light */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  border-radius: 1.25rem;
+  border: 1.5px solid rgba(197, 134, 167, 0.18); /* subtle mauve border */
+  backdrop-filter: blur(12px);
+}
+.terminal-header {
+  background: rgba(245, 194, 220, 0.85); /* lighter pink, semi-transparent */
+  border-bottom: 1px solid rgba(197, 134, 167, 0.12);
+}
+.terminal-header span {
+  color: #7a4c63;
+}
+.terminal-text-primary {
+  color: var(--mauve-dark); /* prompt in dark mauve */
+  font-weight: 600;
+}
+.terminal-text-secondary {
+  color: #222; /* system text in near-black for visibility */
+}
+.terminal-bg input[type="text"] {
+  background: rgba(255,255,255,0.7);
+  color: #222;
+  border: 1px solid var(--mauve-light);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  transition: border 0.2s, background 0.2s;
+}
+.terminal-bg input[type="text"]:focus {
+  outline: none;
+  border-color: var(--mauve);
+  background: #fff;
+}
+.terminal-bg button[type="submit"] {
+  background: var(--mauve);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.terminal-bg button[type="submit"]:hover:not(:disabled) {
+  background: var(--mauve-dark);
+}
+.dark .terminal-bg {
+  background: var(--pink-light) !important;
+  border: 1.5px solid var(--mauve-light);
+}
+.dark .terminal-header {
+  background: rgba(60, 36, 50, 0.85);
+  border-bottom: 1px solid rgba(197, 134, 167, 0.18);
+}
+.dark .terminal-header span {
+  color: #e4c1d2;
+}
+.dark .terminal-text-primary {
+  color: var(--mauve-light);
+}
+.dark .terminal-text-secondary {
+  color: #f3e6ee;
+}
+
+/* Add waving hand animation */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-wave {
+  display: inline-block;
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+/* Form styling to match screenshot */
+.contact-input {
+  background-color: var(--pink-light);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact-button {
+  background-color: var(--mauve);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: var(--mauve-dark);
+}
+
+/* Quote section background for dark mode */
+@media (prefers-color-scheme: dark) {
+  #__next section.bg-\[var\(--pink-light\)\] {
+    background-color: var(--pink-light) !important;
+  }
+}
+
+/* Contact form fields for dark mode */
+.dark .contact-input {
+  background-color: var(--mauve-light) !important;
+  color: #fff;
+}
+
+/* Contact section pink rectangle for dark mode */
+.dark .contact-pink-bg {
+  background-color: var(--pink-light) !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth;
+}
+
+/* Skills section horizontal scroll */
+#skills .overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 1rem;
+}
+
+#skills .overflow-x-auto > div > div {
+  scroll-snap-align: start;
+}
+
+/* Skills auto-scroll animation */
+.skills-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.skills-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Remove previous scroll styles */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+#skills .overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 1rem;
+}
+
+#skills .overflow-x-auto > div > div {
+  scroll-snap-align: start;
+}
