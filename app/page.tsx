@@ -127,7 +127,7 @@ export default function Portfolio() {
       category: "app",
       technologies: ["React Native", "Expo", "Firebase"],
       github: "https://github.com/linamoussadek/dog-app",
-      demo: "#",
+      demo: "https://linamoussadek.github.io/DogApp/",
     },
     {
       id: 2,

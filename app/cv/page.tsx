@@ -74,7 +74,7 @@ export default function CVPage() {
       period: "Jan 2024 - Apr 2024",
       bullets: [
         "Engineered backend services for real-time video streaming using Node.js and GStreamer (H.264 to WebRTC)",
-        "Designed and implemented a complex Gantt chart in React and D3—now deployed at Hong Kong and JFK Airports for live operations management",
+        <span key="gantt-bullet">Designed and implemented a complex Gantt chart in React and D3—<a href="https://www.linkedin.com/company/searidgetechnologies/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 hover:underline">now deployed</a> at Hong Kong and JFK Airports for live operations management</span>,
       ],
     },
     {
@@ -214,7 +214,7 @@ export default function CVPage() {
                 <div className="bg-[var(--mauve-light)] dark:bg-gray-800 light:bg-gray-100 border-2 border-[var(--mauve)] dark:border-gray-600 light:border-gray-300 rounded-xl p-4 flex flex-col items-center shadow-md">
                   <span className="text-xs text-gray-700 dark:text-gray-300 light:text-gray-700 mb-1 font-semibold">Want more details?</span>
                   <a href="https://linamoussadek.com" className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 text-sm font-bold underline break-all block text-center hover:text-[var(--mauve-dark)] dark:hover:text-gray-300 light:hover:text-gray-800 transition-colors">
-                    linamoussadek.dev
+                    linamoussadek.com
                   </a>
                   <span className="text-xs text-gray-500 dark:text-gray-400 light:text-gray-500 mt-1">Visit my website for more info & portfolio</span>
                 </div>
@@ -272,10 +272,10 @@ export default function CVPage() {
                   <h2 className="text-lg font-bold text-gray-900 dark:text-white light:text-gray-900 mb-2 tracking-[0.2em]">PROJECTS</h2>
                   <div className="space-y-2">
                     <div className="text-xs text-gray-700 dark:text-gray-300 light:text-gray-700 text-justify">
-                      <span className="font-semibold">Dog App (Winner):</span> A web app for dog adoption and care, built with a public API during Outstem's interview. Winning project led to my job offer.
+                      <span className="font-semibold"><a href="https://linamoussadek.com/sparksite" target="_blank" rel="noopener noreferrer" className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 hover:underline">Sparksite (Founder & CEO)</a>:</span> Founded a tech platform that uses proprietary AI to reverse-engineer business logos, identify businesses without websites, and auto-generate professional sites with a single click. Enables users to earn commissions by reselling these AI-built websites.
                     </div>
                     <div className="text-xs text-gray-700 dark:text-gray-300 light:text-gray-700 text-justify">
-                      <span className="font-semibold">Sparksite (Founder & CEO):</span> Founded a tech platform that uses proprietary AI to reverse-engineer business logos, identify businesses without websites, and auto-generate professional sites with a single click. Enables users to earn commissions by reselling these AI-built websites.
+                      <span className="font-semibold"><a href="https://linamoussadek.github.io/DogApp/" target="_blank" rel="noopener noreferrer" className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 hover:underline">Dog App (Winner)</a>:</span> A web app for dog adoption and care, built with a public API during Outstem's interview. Winning project led to my job offer.
                     </div>
                   </div>
                 </div>
