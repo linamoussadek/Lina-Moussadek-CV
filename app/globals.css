@@ -426,7 +426,7 @@ textarea:focus {
   background-color: var(--pink-light) !important;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
+/* Hide scrollbar for Chrome, Safari and opera browsers*/
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
