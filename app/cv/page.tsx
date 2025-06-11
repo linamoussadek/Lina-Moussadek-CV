@@ -213,7 +213,7 @@ export default function CVPage() {
               <div className="mb-6 w-full">
                 <div className="bg-[var(--mauve-light)] dark:bg-gray-800 light:bg-gray-100 border-2 border-[var(--mauve)] dark:border-gray-600 light:border-gray-300 rounded-xl p-4 flex flex-col items-center shadow-md">
                   <span className="text-xs text-gray-700 dark:text-gray-300 light:text-gray-700 mb-1 font-semibold">Want more details?</span>
-                  <a href="https://linamoussadek.dev" className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 text-sm font-bold underline break-all block text-center hover:text-[var(--mauve-dark)] dark:hover:text-gray-300 light:hover:text-gray-800 transition-colors">
+                  <a href="https://linamoussadek.com" className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 text-sm font-bold underline break-all block text-center hover:text-[var(--mauve-dark)] dark:hover:text-gray-300 light:hover:text-gray-800 transition-colors">
                     linamoussadek.dev
                   </a>
                   <span className="text-xs text-gray-500 dark:text-gray-400 light:text-gray-500 mt-1">Visit my website for more info & portfolio</span>
