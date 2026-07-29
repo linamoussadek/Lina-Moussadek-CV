@@ -153,8 +153,8 @@ export default function CVPage() {
                   >
                     <div className="flex flex-col gap-1">
                       <a
-                        href="/Lina-Moussadek-CV.pdf"
-                        download
+                        href="/Lina-Moussadek-CV.pdf?v=20260729-design"
+                        download="Lina-Moussadek-CV.pdf"
                         className="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
                         onClick={() => setSelectedPdfVersion("design")}
                       >
