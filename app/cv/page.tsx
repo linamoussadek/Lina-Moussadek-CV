@@ -304,7 +304,7 @@ export default function CVPage() {
                             <p className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 font-medium print:text-sm">University of Ottawa</p>
                             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-gray-500 dark:text-gray-400 light:text-gray-500 text-sm print:text-xs w-full mb-1">
                               <span className="text-left">Ottawa, Ontario, Canada</span>
-                              <span className="text-right">Expected Dec 2025</span>
+                              <span className="text-right">September 2021 to December 2026</span>
                             </div>
                           </div>
                         </div>
