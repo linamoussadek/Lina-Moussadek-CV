@@ -52,7 +52,7 @@ export default function CVPage() {
     {
       logo: "/nokia-logo.png",
       alt: "Nokia logo",
-      title: "Deep Packet Inspection QA (Co-op)",
+      title: "Deep Packet Inspection QA (coop)",
       company: "Nokia",
       companyClass: "text-[var(--mauve)] font-medium print:text-sm",
       location: "Kanata, Ontario, Canada · Hybrid",
@@ -66,7 +66,7 @@ export default function CVPage() {
     {
       logo: "/nokia-logo.png",
       alt: "Nokia logo",
-      title: "Deep Packet Inspection QA (Co-op)",
+      title: "Deep Packet Inspection QA (coop)",
       company: "Nokia",
       companyClass: "text-[var(--mauve)] font-medium print:text-sm",
       location: "Kanata, Ontario, Canada · Hybrid",
@@ -80,7 +80,7 @@ export default function CVPage() {
     {
       logo: "/searidge-logo.jpg",
       alt: "Searidge logo",
-      title: "Software Developer (Co-op)",
+      title: "Software Developer (coop)",
       company: "Searidge Technologies",
       companyClass: "text-[var(--mauve)] font-medium print:text-sm",
       location: "Ottawa, Ontario, Canada · Hybrid",
@@ -300,7 +300,7 @@ export default function CVPage() {
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-2">
                           <img src="/uottawa-logo.png" alt="uOttawa logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
                           <div className="flex-1">
-                            <h3 className="text-lg print:text-base font-semibold text-gray-900 dark:text-white light:text-gray-900">Bachelor of Computer Science</h3>
+                            <h3 className="text-lg print:text-base font-semibold text-gray-900 dark:text-white light:text-gray-900">BSc (Hons) in Computer Science</h3>
                             <p className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 font-medium print:text-sm">University of Ottawa</p>
                             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-gray-500 dark:text-gray-400 light:text-gray-500 text-sm print:text-xs w-full mb-1">
                               <span className="text-left">Ottawa, Ontario, Canada</span>
