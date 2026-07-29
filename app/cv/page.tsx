@@ -192,7 +192,7 @@ export default function CVPage() {
               <h1 className="text-2xl text-gray-900 dark:text-white light:text-gray-900 text-center w-full mb-1 tracking-wider">
                 <span className="font-normal">LINA</span> <span className="font-bold">MOUSSADEK</span>
               </h1>
-              <p className="text-sm text-gray-600 dark:text-gray-300 light:text-gray-600 text-center w-full mb-4">Computer Science student</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 light:text-gray-600 text-center w-full mb-4">Jr. Frontend Developer</p>
               {/* Contact Info */}
               <div className="space-y-2 mb-6 w-full">
                 <a href="mailto:lmous090@uottawa.ca" className="flex items-center gap-2 text-gray-700 dark:text-gray-300 light:text-gray-700 text-sm hover:text-[var(--mauve)] dark:hover:text-gray-200 light:hover:text-gray-900 transition-colors">
