@@ -224,7 +224,7 @@ export default function CVPage() {
                 <div className="space-y-2">
                   <h2 className="text-lg font-bold text-gray-900 dark:text-white light:text-gray-900 mb-2 tracking-[0.2em]">ABOUT</h2>
                   <p className="text-xs text-gray-700 dark:text-gray-300 light:text-gray-700 leading-relaxed text-justify">
-                    Born in Casablanca and educated at a French school, I'm completing my BSc (Hons) in Computer Science while working full-time as a Jr. Frontend Developer at Nokia on Event Driven Automation. I've contributed to dev and test teams across startups, mid-sized firms, and large enterprises, with experience spanning frontend product delivery, backend systems, and network-layer QA. I lead with initiative, build scalable user-focused systems, and bring a strong mix of product, automation, and networking depth.
+                    Born in Casablanca and educated at a French school, I'm a BSc (Hons) in Computer Science graduate working full-time as a Jr. Frontend Developer at Nokia on Event Driven Automation. I've contributed to dev and test teams across startups, mid-sized firms, and large enterprises, with experience spanning frontend product delivery, backend systems, and network-layer QA. I lead with initiative, build scalable user-focused systems, and bring a strong mix of product, automation, and networking depth.
                   </p>
                 </div>
 
