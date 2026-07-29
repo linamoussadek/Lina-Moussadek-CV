@@ -39,14 +39,14 @@ export default function CVPage() {
     {
       logo: "/nokia-logo.png",
       alt: "Nokia logo",
-      title: "Jr. Frontend Developer (EDA)",
+      title: "Jr. Frontend Developer (Event Driven Automation)",
       company: "Nokia",
       companyClass: "text-[var(--mauve)] font-medium print:text-sm",
       location: "",
       period: "2026 - Present",
       bullets: [
-        "Implemented a critical GitLab-style merge request feature, including conflict detection and resolution UI/UX, shortly after starting in the role; now deployed",
-        "Build new frontend features and fix bugs to improve product reliability and user workflows",
+        "Designed and delivered a production-critical GitLab-style Merge Request workflow, implementing complex conflict detection and resolution logic with an intuitive, responsive UI/UX for enterprise-scale data center automation.",
+        "Develop frontend features and resolve complex product issues, improving platform reliability, usability, and real-time operational workflows.",
       ],
     },
     {
