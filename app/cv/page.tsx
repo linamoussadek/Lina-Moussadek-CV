@@ -37,6 +37,19 @@ export default function CVPage() {
   // 1. Create an array of work experiences (with all the relevant data for each entry)
   const workExperiences = [
     {
+      logo: "/placeholder-logo.svg",
+      alt: "EDA logo",
+      title: "Jr. Frontend Developer (EDA)",
+      company: "EDA",
+      companyClass: "text-[var(--mauve)] font-medium print:text-sm",
+      location: "",
+      period: "2026 - Present",
+      bullets: [
+        "Implemented a critical GitLab-style merge request feature, including conflict detection and resolution UI/UX, shortly after starting in the role; now deployed",
+        "Build new frontend features and fix bugs to improve product reliability and user workflows",
+      ],
+    },
+    {
       logo: "/nokia-logo.png",
       alt: "Nokia logo",
       title: "Deep Packet Inspection QA (Co-op)",
@@ -75,20 +88,6 @@ export default function CVPage() {
       bullets: [
         "Engineered backend services for real-time video streaming using Node.js and GStreamer (H.264 to WebRTC)",
         <span key="gantt-bullet">Designed and implemented a complex Gantt chart in React and D3—<a href="https://www.linkedin.com/company/searidgetechnologies/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 hover:underline">now deployed</a> at Hong Kong and JFK Airports for live operations management</span>,
-      ],
-    },
-    {
-      logo: "/outstem_logo.png",
-      alt: "Outstem logo",
-      title: "Full Stack Engineer (Co-op)",
-      company: "Outstem",
-      companyClass: "text-[var(--mauve)] font-medium print:text-sm",
-      location: "Ottawa, ON · Remote",
-      period: "May 2023 - Aug 2023",
-      bullets: [
-        "Developed pixel-perfect Angular components from design mockups, enhancing UX consistency",
-        "Extended backend APIs and modified SQL schemas for bug resolution and feature delivery",
-        "Delivered accurate English–French translations to support full product localization",
       ],
     },
   ]
@@ -311,7 +310,7 @@ export default function CVPage() {
                         </div>
                         <div className="mt-2">
                           <p className="text-sm print:text-xs text-gray-700 dark:text-gray-300 light:text-gray-700 text-justify">
-                            <strong>Achievements:</strong> Dean's List Merit (Winter 2025), Francophonie Scholarship Recipient
+                            <strong>Achievements:</strong> Dean's List Merit 2025, 2026, Francophonie Scholarship Recipient
                           </p>
                         </div>
                       </div>
