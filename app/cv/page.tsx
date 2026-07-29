@@ -271,7 +271,7 @@ export default function CVPage() {
                   <h2 className="text-lg font-bold text-gray-900 dark:text-white light:text-gray-900 mb-2 tracking-[0.2em]">PROJECTS</h2>
                   <div className="space-y-2">
                     <div className="text-xs text-gray-700 dark:text-gray-300 light:text-gray-700 text-justify">
-                      <span className="font-semibold">Yosrart Gatineau Art School Website & Management Dashboard:</span> Built the public website for Yosrart, a Gatineau art school, along with a management dashboard to support school operations and content administration.
+                      <span className="font-semibold text-[var(--mauve)] dark:text-gray-400 light:text-gray-600">Yosrart Gatineau Art School Website & Management Dashboard:</span> Built the public website for Yosrart, a Gatineau art school, along with a management dashboard to support school operations and content administration.
                     </div>
                     <div className="text-xs text-gray-700 dark:text-gray-300 light:text-gray-700 text-justify">
                       <span className="font-semibold"><a href="https://linamoussadek.github.io/DogApp/" target="_blank" rel="noopener noreferrer" className="text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 hover:underline">Dog App (Winner)</a>:</span> A web app for dog adoption and care, built with a public API during a technical interview. The winning project led to a job offer.
