@@ -42,7 +42,7 @@ export default function CVPage() {
       title: "Jr. Frontend Developer (Event Driven Automation)",
       company: "Nokia",
       companyClass: "text-[var(--mauve)] font-medium print:text-sm",
-      location: "",
+      location: "Kanata, Ontario, Canada · Hybrid",
       period: "2026 - Present",
       bullets: [
         "Designed and delivered a production-critical GitLab-style Merge Request workflow, implementing complex conflict detection and resolution logic with an intuitive, responsive UI/UX for enterprise-scale data center automation.",
