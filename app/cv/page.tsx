@@ -37,10 +37,10 @@ export default function CVPage() {
   // 1. Create an array of work experiences (with all the relevant data for each entry)
   const workExperiences = [
     {
-      logo: "/placeholder-logo.svg",
-      alt: "EDA logo",
+      logo: "/nokia-logo.png",
+      alt: "Nokia logo",
       title: "Jr. Frontend Developer (EDA)",
-      company: "EDA",
+      company: "Nokia",
       companyClass: "text-[var(--mauve)] font-medium print:text-sm",
       location: "",
       period: "2026 - Present",
