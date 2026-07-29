@@ -153,7 +153,7 @@ export default function CVPage() {
                   >
                     <div className="flex flex-col gap-1">
                       <a
-                        href="/Lina-Moussadek-CV.pdf?v=20260729-design"
+                        href="/Lina-Moussadek-CV.pdf?v=20260729-design-desktop"
                         download="Lina-Moussadek-CV.pdf"
                         className="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
                         onClick={() => setSelectedPdfVersion("design")}
@@ -181,9 +181,9 @@ export default function CVPage() {
 
         {/* CV Content */}
         <div className="max-w-5xl mx-auto bg-white dark:bg-gray-900 light:bg-white shadow-2xl print:shadow-none print:max-w-none transition-colors duration-200">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 sm:p-6 md:p-8 print:p-4">
+          <div className="cv-print-grid grid grid-cols-1 md:grid-cols-3 gap-8 p-4 sm:p-6 md:p-8 print:p-4">
             {/* Left Column */}
-            <div className="md:col-span-1 flex flex-col h-full justify-between items-center md:items-start border-r-0 md:border-r border-gray-200 dark:border-gray-700 light:border-gray-200 pr-0 md:pr-6 print:border-none">
+            <div className="cv-print-left md:col-span-1 flex flex-col h-full justify-between items-center md:items-start border-r-0 md:border-r border-gray-200 dark:border-gray-700 light:border-gray-200 pr-0 md:pr-6 print:border-none">
               {/* Profile Photo */}
               <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full border-[3px] border-[var(--mauve)] dark:border-gray-600 light:border-gray-400 bg-gray-200 dark:bg-gray-700 light:bg-gray-100 mb-4 mx-auto relative overflow-hidden flex items-center justify-center">
                 <img src="/cv-img.png" alt="Lina Moussadek" className="w-full h-full object-cover rounded-full" />
@@ -282,7 +282,7 @@ export default function CVPage() {
             </div>
 
             {/* Right Column */}
-            <div className="md:col-span-2 md:pl-0 flex flex-col gap-8">
+            <div className="cv-print-right md:col-span-2 md:pl-0 flex flex-col gap-8">
               {/* Education */}
               <section>
                 <h2 className="text-xl font-bold text-[var(--mauve)] dark:text-gray-400 light:text-gray-600 mb-6 tracking-[0.2em]">EDUCATION</h2>

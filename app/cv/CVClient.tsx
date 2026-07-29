@@ -107,6 +107,24 @@ export default function CVClient({
             .print\\:shadow-none {
               box-shadow: none !important;
             }
+
+            .cv-print-grid {
+              display: grid !important;
+              grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) !important;
+              align-items: start !important;
+            }
+
+            .cv-print-left {
+              grid-column: span 1 / span 1 !important;
+              align-items: flex-start !important;
+              border-right: 1px solid #e5e7eb !important;
+              padding-right: 1.5rem !important;
+            }
+
+            .cv-print-right {
+              grid-column: span 2 / span 2 !important;
+              padding-left: 0 !important;
+            }
           }
         `}</style>
       </head>

@@ -450,7 +450,7 @@ export default function Portfolio() {
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/Lina-Moussadek-CV.pdf?v=20260729-design"
+                  href="/Lina-Moussadek-CV.pdf?v=20260729-design-desktop"
                   download="Lina-Moussadek-CV.pdf"
                   className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-400 text-gray-600 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center gap-2"
                 >
