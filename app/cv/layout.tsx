@@ -4,7 +4,7 @@ import CVClient from "./CVClient"
 
 export const metadata: Metadata = {
   title: "Lina Moussadek - CV",
-  description: "Computer Science Student & Full Stack Developer - Curriculum Vitae",
+  description: "Frontend Software Engineer with React, TypeScript, and enterprise software experience",
 }
 
 export default function CVLayout({
