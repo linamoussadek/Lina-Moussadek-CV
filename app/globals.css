@@ -449,6 +449,27 @@ textarea:focus {
   scroll-snap-align: start;
 }
 
+/* Force the design PDF to use the normal desktop CV layout. */
+@media print {
+  .cv-print-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) !important;
+    align-items: start !important;
+  }
+
+  .cv-print-left {
+    grid-column: span 1 / span 1 !important;
+    align-items: flex-start !important;
+    border-right: 1px solid #e5e7eb !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .cv-print-right {
+    grid-column: span 2 / span 2 !important;
+    padding-left: 0 !important;
+  }
+}
+
 /* Skills auto-scroll animation */
 .skills-track {
   display: flex;
